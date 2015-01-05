@@ -1,0 +1,21 @@
+# a= le chiffre qu'il faut multiplier
+def entree(): 
+	#Les entrees du programme 
+ 	print ("Calcul d'une multiplication : y=a.x.\n") 
+ 	a = float(input("Indiquez la valeur de a :")) 
+ 	return a
+ 	 
+  
+def fonction(x,a): 
+ 	y= a*x 
+ 	return y 
+ 
+ 
+def pourImpression(a): 
+ 	for x in range(1,16): 
+ 		print ("\n"+str(a)+"x"+str(x)+"="+str(fonction(x,a))+"\n") 
+ 
+print ("   ---> Debut du programme.\n") 
+coefA=entree() 
+pourImpression(coefA) 
+print ("\n   ---> Fin du programme.") 
